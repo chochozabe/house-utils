@@ -1,8 +1,8 @@
 #### 중계수수료 - 매매
-GET {{host}}/api/calc/brokerage?actionType=PURCHASE&price=1000000000
+GET {{host}}/api/calc/brokerage?actionType=AA&price=1000000000
 
 #### 중계수수료 - 매매
-GET {{host}}/api/calc/brokerage?actionType=RENT&price=1000000000
+GET {{host}}/api/calc/brokerage?actionType=RENTT&price=1000000000
 
 ###
-GET {{host}}/api/calc/apartment/1?actionType=PURCHASE
+GET {{host}}/api/calc/apartment/1?actionType=AA

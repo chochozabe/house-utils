@@ -1,17 +1,17 @@
 package com.whykk.houseutils.exception;
 
-import java.io.Serializable;
-
-public class HouseUtilsException extends RuntimeException implements Serializable {
+public class HouseUtilsException extends RuntimeException {
 
     private ErrorCode errorCode;
+    private String message;
 
     public HouseUtilsException(ErrorCode errorCode) {
-        super(errorCode.getMessage());
-        this.errorCode = errorCode;
+       this(errorCode, errorCode.getMessage());
     }
 
-    public ErrorCode getErrorCode() {
-        return errorCode;
+    public HouseUtilsException(ErrorCode errorCode, String customMessage) {
+        super(customMessage);
+        this.errorCode = errorCode;
+        this.message = customMessage;
     }
 }
